@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shppandroid1.app.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fullLayoot">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/linAppTitle"
+            android:layout_gravity="center"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/icon"
+                    android:src="@drawable/logo"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="34dp"
+                    android:text="@string/app_name"
+                    android:singleLine="false"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold"
+                    android:id="@+id/tvtitle"
+                    android:textColor="@color/color_dark_blue" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_weight="1"
+            android:background="@drawable/background">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/linOptions"
+                android:background="@drawable/message_inactive">
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/linAlerts"
+                    android:background="@color/color_dark_blue"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ivAlertsIcon"
+                        android:src="@drawable/alerts"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Alerts"
+                        android:id="@+id/tvAlerts"
+                        android:layout_weight="1"
+                        android:textSize="25dp"
+                        android:textColor="@color/color_white"
+                        android:gravity="left|center"
+                        android:layout_marginLeft="10dp" />
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/btnAlertsMessages"
+                        android:src="@drawable/message_inactive"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:background="@drawable/message_inactive"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ivAlertsArrow"
+                        android:src="@drawable/arrow_right"
+                        android:layout_weight="2"
+                        android:layout_marginRight="5dp"
+                        android:layout_margin="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/linEvents"
+                    android:background="@color/color_blue"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ivEventsIcon"
+                        android:src="@drawable/events"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Events"
+                        android:id="@+id/tvEvents"
+                        android:layout_weight="1"
+                        android:textSize="25dp"
+                        android:textColor="@color/color_white"
+                        android:gravity="left|center"
+                        android:layout_marginLeft="10dp" />
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/btnEventsMessages"
+                        android:src="@drawable/message_inactive"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:background="@drawable/message_inactive"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ivEventsArrow"
+                        android:src="@drawable/arrow_right"
+                        android:layout_weight="2"
+                        android:layout_marginRight="5dp"
+                        android:layout_margin="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/linNewsLetters"
+                    android:background="@color/color_teal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ivNewsLettersIcon"
+                        android:src="@drawable/newsletters"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Newsletters"
+                        android:id="@+id/tvNewsLetters"
+                        android:layout_weight="1"
+                        android:textSize="25dp"
+                        android:textColor="@color/color_white"
+                        android:gravity="left|center"
+                        android:layout_marginLeft="10dp" />
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/btnNewsLettersMessages"
+                        android:src="@drawable/message_inactive"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:background="@drawable/message_inactive"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ivNewsLettersArrow"
+                        android:src="@drawable/arrow_right"
+                        android:layout_weight="2"
+                        android:layout_marginRight="5dp"
+                        android:layout_margin="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/linNews"
+                    android:background="@color/color_green"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ivNewsIcon"
+                        android:src="@drawable/news"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="News"
+                        android:id="@+id/tvNews"
+                        android:layout_weight="1"
+                        android:textSize="25dp"
+                        android:textColor="@color/color_white"
+                        android:gravity="left|center"
+                        android:layout_marginLeft="10dp" />
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/btnNewsMessages"
+                        android:src="@drawable/message_inactive"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:background="@drawable/message_inactive"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ivNewsArrow"
+                        android:src="@drawable/arrow_right"
+                        android:layout_weight="2"
+                        android:layout_marginRight="5dp"
+                        android:layout_margin="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/linParentsInfo"
+                    android:background="@color/color_grey" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ivParentsInfoIcon"
+                        android:src="@drawable/parentsinfo"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Parents info"
+                        android:id="@+id/tvParentsInfo"
+                        android:layout_weight="1"
+                        android:textSize="25dp"
+                        android:textColor="@color/color_white"
+                        android:gravity="left|center"
+                        android:layout_marginLeft="10dp" />
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/btnParentsInfoMessages"
+                        android:src="@drawable/message_inactive"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:background="@drawable/message_inactive"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ivParentsInfoArrow"
+                        android:layout_weight="2"
+                        android:layout_marginRight="5dp"
+                        android:layout_margin="17dp"
+                        android:adjustViewBounds="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linParentsMenu"
+                    android:background="@color/color_grey_light"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/linUniform">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Uniform Shop"
+                            android:id="@+id/tvUniformShop"
+                            android:textSize="25dp"
+                            android:textColor="@color/color_black"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="60dp"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:layout_width="33dp"
+                            android:layout_height="33dp"
+                            android:id="@+id/btnUniformShopMessages"
+                            android:src="@drawable/message_inactive"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:background="@drawable/message_inactive"
+                            android:layout_gravity="center" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ivUniformArrow"
+                            android:src="@drawable/arrow_black"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="2"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/linCanteen" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Canteen"
+                            android:id="@+id/tvCanteen"
+                            android:layout_weight="1"
+                            android:textSize="25dp"
+                            android:textColor="@color/color_black"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="60dp" />
+
+                        <Button
+                            android:layout_width="33dp"
+                            android:layout_height="33dp"
+                            android:id="@+id/btnCanteenMessages"
+                            android:src="@drawable/message_inactive"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:background="@drawable/message_inactive"
+                            android:layout_gravity="center" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ivCanteenArrow"
+                            android:src="@drawable/arrow_black"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="2"
+                            android:layout_margin="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/linPFAssociation" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="P&amp;F Association"
+                            android:id="@+id/tvPFAssociation"
+                            android:layout_weight="1"
+                            android:textSize="25dp"
+                            android:textColor="@color/color_black"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="60dp" />
+
+                        <Button
+                            android:layout_width="33dp"
+                            android:layout_height="33dp"
+                            android:id="@+id/btnPFAssociationMessages"
+                            android:src="@drawable/message_inactive"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:background="@drawable/message_inactive"
+                            android:layout_gravity="center" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ivPFAssociationIcon"
+                            android:src="@drawable/arrow_black"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="2"
+                            android:layout_margin="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/linFees" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Fees"
+                            android:id="@+id/tvFees"
+                            android:layout_weight="1"
+                            android:textSize="25dp"
+                            android:textColor="@color/color_black"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="60dp" />
+
+                        <Button
+                            android:layout_width="33dp"
+                            android:layout_height="33dp"
+                            android:id="@+id/btnFeesMessages"
+                            android:src="@drawable/message_inactive"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:background="@drawable/message_inactive"
+                            android:layout_gravity="center" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ivFeesArrow"
+                            android:src="@drawable/arrow_black"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="2"
+                            android:layout_margin="8dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/linEnrolements" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Enrolements"
+                            android:id="@+id/tvEnrolements"
+                            android:layout_weight="1"
+                            android:textSize="25dp"
+                            android:textColor="@color/color_black"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="60dp" />
+
+                        <Button
+                            android:layout_width="33dp"
+                            android:layout_height="33dp"
+                            android:id="@+id/btnEnrolementsMessages"
+                            android:src="@drawable/message_inactive"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:background="@drawable/message_inactive"
+                            android:layout_gravity="center" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ivEnrolementsArrow"
+                            android:src="@drawable/arrow_black"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="2"
+                            android:layout_margin="8dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:id="@+id/linContactUs"
+                    android:background="@color/color_white" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ivContactUsIcon"
+                        android:src="@drawable/contactus"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Contacts us"
+                        android:id="@+id/tvContactUs"
+                        android:layout_weight="1"
+                        android:textSize="25dp"
+                        android:textColor="@color/color_grey"
+                        android:gravity="left|center"
+                        android:layout_marginLeft="10dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ivContactUsMessages"
+                        android:src="@drawable/message_inactive"
+                        android:layout_weight="2"
+                        android:layout_marginRight="5dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ivContactUsArrow"
+                        android:src="@drawable/arrow_black"
+                        android:layout_weight="2"
+                        android:layout_marginRight="5dp"
+                        android:layout_margin="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_grey_light"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/linMenu"
+            android:gravity="bottom"
+            android:background="@color/color_white">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnHome"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:src="@drawable/home_active"
+                android:adjustViewBounds="false"
+                android:layout_margin="15dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnAlerts"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:src="@drawable/alerts_inactive"
+                android:layout_margin="15dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnFeed"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:src="@drawable/feed_inactive"
+                android:layout_margin="15dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnCalendar"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:src="@drawable/calendar_inactive"
+                android:layout_margin="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

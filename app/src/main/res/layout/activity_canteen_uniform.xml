@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activities.ParentsUniformActivity"
+    android:id="@+id/fullLayoot">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/linAppTitle"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/icon"
+                    android:src="@drawable/logo"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="34dp"
+                    android:text="@string/app_name"
+                    android:singleLine="false"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold"
+                    android:id="@+id/tvtitle"
+                    android:textColor="@color/color_dark_blue" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_weight="1"
+            android:background="@drawable/background">
+
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/linMenu"
+            android:gravity="bottom"
+            android:background="@color/color_white">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnHome"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:src="@drawable/home_inactive"
+                android:adjustViewBounds="false"
+                android:layout_margin="15dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnAlerts"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:src="@drawable/alerts_inactive"
+                android:layout_margin="15dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnFeed"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:src="@drawable/feed_inactive"
+                android:layout_margin="15dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnCalendar"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:src="@drawable/calendar_inactive"
+                android:layout_margin="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

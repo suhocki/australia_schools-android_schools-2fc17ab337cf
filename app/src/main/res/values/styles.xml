@@ -1,0 +1,105 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="HomeTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/color_grey_light</item>
+        <item name="colorPrimaryDark">@color/color_grey_light</item>
+        <item name="colorAccent">@color/color_grey_light</item>
+        <item name= "android:windowAnimationStyle">@null</item>
+
+    </style>
+
+    <style name="AlertsTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/color_dark_blue</item>
+        <item name="colorPrimaryDark">@color/color_dark_blue</item>
+        <item name="colorAccent">@color/color_dark_blue</item>
+        <item name= "android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="EventsTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/color_blue</item>
+        <item name="colorPrimaryDark">@color/color_blue</item>
+        <item name="colorAccent">@color/color_blue</item>
+        <item name= "android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="NewsTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/color_green</item>
+        <item name="colorPrimaryDark">@color/color_green</item>
+        <item name="colorAccent">@color/color_green</item>
+        <item name= "android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="NewslettersTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/color_teal</item>
+        <item name="colorPrimaryDark">@color/color_teal</item>
+        <item name="colorAccent">@color/color_teal</item>
+        <item name= "android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="ParentsTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/color_grey</item>
+        <item name="colorPrimaryDark">@color/color_grey</item>
+        <item name="colorAccent">@color/color_grey</item>
+        <item name= "android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="ContactUsTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/color_white</item>
+        <item name="colorPrimaryDark">@color/color_white</item>
+        <item name="colorAccent">@color/color_white</item>
+        <item name= "android:windowAnimationStyle">@null</item>
+    </style>
+
+
+
+    <!-- Dark theme. -->
+    <style name="CaldroidDefaultDark" parent="CaldroidDefault">
+        <item name="styleCaldroidViewLayout">@style/CaldroidDefaultDarkCalendarViewLayout</item>
+        <item name="styleCaldroidMonthName">@style/CaldroidDefaultDarkMonthName</item>
+        <item name="styleCaldroidNormalCell">@style/CaldroidDefaultDarkNormalCell</item>
+        <item name="styleCaldroidSquareCell">@style/CaldroidDefaultDarkSquareCell</item>
+        <item name="styleCaldroidGridView">@style/CaldroidDefaultDarkGridView</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkCalendarViewLayout">
+    </style>
+
+    <style name="CaldroidDefaultDarkMonthName" parent="CaldroidDefaultMonthName">
+    </style>
+
+    <style name="CaldroidDefaultDarkGridView" parent="CaldroidDefaultGridView">
+    </style>
+
+    <style name="CaldroidDefaultDarkCell" parent="CaldroidDefaultCell">
+        <item name="android:textColor">@color/cell_text_color</item>
+        <item name="android:background">@drawable/empty_date_low</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:height">40dp</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkNormalCell" parent="CaldroidDefaultDarkCell">
+        <item name="android:padding">1dp</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkSquareCell" parent="CaldroidDefaultDarkCell" >
+        <item name="android:padding">1dp</item>
+    </style>
+</resources>

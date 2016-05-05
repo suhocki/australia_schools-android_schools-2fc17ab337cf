@@ -1,0 +1,55 @@
+<resources>
+
+    <string name="app_icon_label">"SHS Thornlie v1"</string>
+
+    <string name="app_name">"Sacred Heart School Thornlie"</string>
+    <string name="string1_app_name">"SACRED HEART"</string>
+    <string name="string2_app_name">"SCHOOL"</string>
+    <string name="string3_app_name">"THORNLIE"</string>
+
+    <string name="add_to_calendar">"Add to Calendar"</string>
+
+    <string name="address">"Address:"</string>
+    <string name="address_details">"40 Ovens Road, Thornlie WA 6108"</string>
+
+    <string name="phone">"Phone:"</string>
+    <string name="phone_details">"(08) 9251 3000"</string>
+
+    <string name="fax">"Fax:"</string>
+    <string name="fax_details">"(08) 9251 3090"</string>
+
+    <string name="email_details">"admin@shthorn.wa.edu.au"</string>
+    <string name="to_email">"To: admin@shthorn.wa.edu.au"</string>
+
+    <string name="send">"Send"</string>
+    <string name="home">"Home"</string>
+    <string name="alerts">"Alerts"</string>
+    <string name="events">"Events"</string>
+    <string name="newsletters">"Newsletters"</string>
+    <string name="news">"News"</string>
+    <string name="contact_us">"Contact us"</string>
+    <string name="settings">"Settings"</string>
+    <string name="feed">"Feed"</string>
+    <string name="email">"Email"</string>
+    <string name="events_calendar">"Events Calendar"</string>
+    <string name="canteen">"Canteen"</string>
+    <string name="uniform_shop">"Uniform Shop"</string>
+    <string name="fees">"Fees"</string>
+    <string name="enrolements">"Enrolements"</string>
+    <string name="f_association">"F Association"</string>
+    <string name="view_newsletter">"View Newsletter"</string>
+
+    <string name="emptyDate">"Empty date information"</string>
+    <string name="error_connection">"Check your connection"</string>
+    <string name="error_something_wrong">"Error... Something wrong"</string>
+
+    <string name="sending">"Sending"</string>
+    <string name="sent_token_to_server">"sentTokenToServer"</string>
+    <string name="registration_complete">"registrationComplete"</string>
+     <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to
+        send downstream messages to this app.</string>
+    <string name="registering_message">Generating InstanceID token...</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token,
+        sending the fetched token to the server or subscribing to the PubSub topic. Please try
+        running the sample again.</string>
+</resources>

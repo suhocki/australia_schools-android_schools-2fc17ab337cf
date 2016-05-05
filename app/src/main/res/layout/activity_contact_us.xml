@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ContactUsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fullLayoot"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/linearLayout"
+            android:layout_gravity="center"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/logo"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="34dp"
+                    android:text="@string/app_name"
+                    android:singleLine="false"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold"
+                    android:id="@+id/textView"
+                    android:textColor="@color/color_dark_blue" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_grey_light"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/contact_us"
+                android:id="@+id/textView2"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:visibility="gone" />
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/webView"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/frame">
+
+            <fragment
+                android:id="@+id/mapView"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="48dp"
+                android:layout_height="30dp"
+                android:id="@+id/btnRoute"
+                android:layout_gravity="top|left"
+                android:background="@drawable/road_red"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/linMenu"
+            android:gravity="bottom"
+            android:background="@color/color_white">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnHome"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:src="@drawable/home_inactive"
+                android:adjustViewBounds="false"
+                android:layout_margin="15dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnAlerts"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:src="@drawable/alerts_inactive"
+                android:layout_margin="15dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnFeed"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:src="@drawable/feed_inactive"
+                android:layout_margin="15dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnCalendar"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:src="@drawable/calendar_inactive"
+                android:layout_margin="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

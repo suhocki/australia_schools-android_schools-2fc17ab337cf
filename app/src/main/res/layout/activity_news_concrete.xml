@@ -11,7 +11,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fullLayoot">
+        android:id="@+id/fullLayoot"
+        android:background="#ffffff">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -19,14 +20,16 @@
             android:layout_height="100dp"
             android:gravity="center_vertical|center_horizontal"
             android:id="@+id/linAppTitle"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:background="#ffffff">
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:gravity="center">
+                android:gravity="center"
+                android:background="#ffffff">
 
                 <ImageView
                     android:layout_width="70dp"
@@ -59,12 +62,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#ffffff">
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -85,7 +90,8 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" >
+                    android:layout_weight="1"
+                    android:background="#ffffff">
 
                     <TextView
                         android:id="@+id/tvTitle"

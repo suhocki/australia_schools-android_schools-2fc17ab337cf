@@ -35,7 +35,7 @@ import sun.rmi.runtime.Log;
 // implementation see: https://developers.google.com/cloud-messaging/server
 public class GcmSender {
 
-    public static final String API_KEY = "AIzaSyAuBOL9nFtG7r43q-Q0dA3Z0s7Cbz4eU7U";
+    public static final String API_KEY = "AIzaSyCyovQMoGQsSlvUKw1i4WW5z_Emo6BVPFg";
 
     public static void main(String[] args) {
         if (args.length < 1 || args.length > 2 || args[0] == null) {

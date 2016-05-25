@@ -11,7 +11,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fullLayoot">
+        android:id="@+id/fullLayoot"
+        android:background="#ffffff">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -19,14 +20,16 @@
             android:layout_height="100dp"
             android:gravity="center_vertical|center_horizontal"
             android:id="@+id/linAppTitle"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:background="#ffffff">
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:gravity="center">
+                android:gravity="center"
+                android:background="#ffffff">
 
                 <ImageView
                     android:layout_width="70dp"
@@ -62,7 +65,8 @@
             android:id="@+id/listNewsMenu"
             android:layout_weight="1"
             android:descendantFocusability="blocksDescendants"
-            android:headerDividersEnabled="false" />
+            android:headerDividersEnabled="false"
+            android:background="#ffffff" />
 
         <LinearLayout
             android:orientation="vertical"

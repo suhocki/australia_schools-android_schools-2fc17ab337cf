@@ -1,4 +1,4 @@
-package thronlie.balinasoft.by.sacredheartschoolthronlie;
+package au.com.websitemasters.thornlie;
 
 import org.junit.Test;
 
